@@ -41,6 +41,6 @@
   "devDependencies": {
     "coffeescript": "^1.12.7",
     "express": "^4.13.4",
-    "watch": "^0.18.0"
+    "watch": "^1.0.2"
   }
 }
