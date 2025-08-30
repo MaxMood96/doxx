@@ -4,8 +4,9 @@
   "description": "Doxx — a static docs generator with dynamic pages support.",
   "main": "index.js",
   "scripts": {
-    "prepare": "coffee -o build -c lib",
-    "test": "echo \"This repo has no tests specified.\" && exit 0"
+    "prepare": "npm run snyk-protect && coffee -o build -c lib",
+    "test": "echo \"This repo has no tests specified.\" && exit 0",
+    "snyk-protect": "snyk-protect"
   },
   "bin": {
     "doxx": "./doxx.js"
@@ -24,7 +25,7 @@
     "@balena/doxx-handlebars-helper": "^1.0.1",
     "@balena/doxx-utils": "^1.0.1",
     "consolidate": "^0.14.0",
-    "handlebars-helpers": "^0.6.1",
+    "handlebars-helpers": "^0.7.4",
     "lodash": "^4.12.0",
     "lunr": "^1.0.0",
     "metalsmith": "^2.1.0",
@@ -36,7 +37,8 @@
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-prefixoid": "^1.0.3",
     "semver": "^5.3.0",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "coffeescript": "^1.12.7",
@@ -45,5 +47,6 @@
   },
   "versionist": {
     "publishedAt": "2022-12-28T08:53:28.010Z"
-  }
+  },
+  "snyk": true
 }
