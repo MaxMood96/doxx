@@ -24,7 +24,7 @@
     "@balena/doxx-handlebars-helper": "^1.0.1",
     "@balena/doxx-utils": "^1.0.1",
     "consolidate": "^0.14.0",
-    "handlebars-helpers": "^0.6.1",
+    "handlebars-helpers": "^0.9.0",
     "lodash": "^4.12.0",
     "lunr": "^1.0.0",
     "metalsmith": "^2.1.0",
